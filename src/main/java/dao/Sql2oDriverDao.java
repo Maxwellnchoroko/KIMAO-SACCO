@@ -52,7 +52,7 @@ public class Sql2oDriverDao implements DriverDao {
 
         @Override
         public  Driver findById(int id){
-            String sql = "SELECT * FROM users  WHERE id =:id;";
+            String sql = "SELECT * FROM driver  WHERE id =:id;";
             try(Connection con= sql2o.open()){
                 return con.createQuery(sql)
                         .addParameter("id",id)

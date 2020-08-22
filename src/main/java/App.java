@@ -104,57 +104,6 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
-        post("/vehicle/new",(request, response) -> {
-            Map<String,Object> model =new HashMap<>();
-            String  name =request.queryParams("name");
-            String description = request.queryParams("description");
-            int employees =Integer.parseInt(request.queryParams("employees"));
-            Vehicle newVehicle = new Departments(name,description,employees);
-            departmentsDao.add(newDepartments);
-            return new ModelAndView(model,"success.hbs");
-        }, new HandlebarsTemplateEngine());
-
-        get ("/department",(request, response) -> {
-            Map<String,Object>model =new HashMap<>();
-            model.put("departments",departmentsDao.getAll());
-            return new ModelAndView(model,"dept.hbs");
-        },new HandlebarsTemplateEngine());
-
-        post("/news/new",(request, response) -> {
-            Map<String,Object> model =new HashMap<>();
-            String  news =request.queryParams("news");
-            int departmentId =Integer.parseInt(request.queryParams("departmentId"));
-            News newNews = new News(news,departmentId);
-            newsDao.add(newNews);
-            return new ModelAndView(model,"success.hbs");
-        }, new HandlebarsTemplateEngine());
-
-        get ("/news",(request, response) -> {
-            Map<String,Object>model =new HashMap<>();
-            model.put("news",newsDao.getAll());
-            return new ModelAndView(model,"news.hbs");
-        },new HandlebarsTemplateEngine());
-
-        post("/user/new",(request, response) -> {
-            Map<String,Object> model =new HashMap<>();
-            String  position =request.queryParams("position");
-            int departmentId =Integer.parseInt(request.queryParams("departmentId"));
-            User newUser = new User(position,departmentId);
-            userDao.add(newUser);
-            return new ModelAndView(model,"success.hbs");
-        }, new HandlebarsTemplateEngine());
-
-        get ("/users",(request, response) -> {
-            Map<String,Object>model =new HashMap<>();
-            model.put("users",userDao.getAll());
-            return new ModelAndView(model,"user.hbs");
-        },new HandlebarsTemplateEngine());
-
-
-        get("/",(request, response) -> {
-            Map<String,Object>model =new HashMap<>();
-            return new ModelAndView(model,"index.hbs");
-        },new HandlebarsTemplateEngine());
 
     }
 }
