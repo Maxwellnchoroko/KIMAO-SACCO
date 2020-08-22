@@ -1,0 +1,44 @@
+{{#partial "content"}}
+    <h1> Hired Vehicles</h1>
+    <br>
+    <br>
+    <table class="table table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Model Name </th>
+            <th scope="col">Age </th>
+            <th scope="col">Date of Purchase</th>
+            <th scope="col"> Purchase Price</th>
+            <th scope="col">Current Price </th>
+            <th scope="col">Chassis Number </th>
+            <th scope="col">Color</th>
+            <th scope="col"> Owner ID</th>
+            <th scope="col">Driver ID </th>
+            <th scope="col">Mechanic ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each vehicle}}
+            <tr>
+                <td>{{modelName}}</td>
+                <!--Location of Sighting-->
+                <td>{{age}}</td>
+                <!--Animal's Name-->
+                <td>{{dateOfPurchase}}</td>
+                <td>{{purchasePrice}}</td>
+                <td>{{currentPrice}}</td>
+                <!--Location of Sighting-->
+                <td>{{chassisNumber}}</td>
+                <!--Animal's Name-->
+                <td>{{color}}</td>
+                <td>{{ownerId}}</td>
+                <td>{{driverId}}</td>
+                <!--Location of Sighting-->
+                <td>{{mechanicId}}</td>
+                <!--Animal's Name-->
+
+        {{/each}}
+        </tbody>
+    </table>
+{{/partial}}
+{{> layout.hbs}}

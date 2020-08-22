@@ -1,0 +1,47 @@
+}
+.nav li{
+display:inline-block;
+margin-left:20px;
+text-transform:uppercase;
+}
+.nav li a{
+font-weight:bold;
+font-size:1.5em;
+padding:15px;
+}
+label{
+font-size:1.4;
+}
+body{
+     background-image:Url("https://www.xmple.com/wallpaper/single-plain-black-solid-color-one-colour-2048x1152-c-020617-f-24.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+
+}
+thead{
+    text-align: center;
+    z-index: 2;
+}
+thead tr{
+    padding-right: 5px;
+    z-index: 2;
+}
+th{
+    font-weight: normal;
+    font-variant: small-caps;
+    text-transform:uppercase;
+    color: red;
+}
+td{
+    padding: 0.5rem;
+    border-right: 2px;
+    color:white;
+
+
+}
+button{
+margin-left:5%
+    font-size: 1.5em;
+    margin-top:20px;

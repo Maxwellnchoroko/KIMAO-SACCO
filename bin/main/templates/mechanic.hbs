@@ -1,0 +1,41 @@
+{{#partial "content"}}
+    <h1> Mechanic</h1>
+    <br>
+    <br>
+    <table class="table table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Name </th>
+            <th scope="col">NationalID </th>
+            <th scope="col">Phone Number</th>
+            <th scope="col"> Cost</th>
+            <th scope="col">Date </th>
+            <th scope="col">Chassis Number </th>
+            <th scope="col"> Penalty amount</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {{#each mechanic}}
+            <tr>
+                <td>{{name}}</td>
+                <!--Location of Sighting-->
+                <td>{{nationalId}}</td>
+                <!--Animal's Name-->
+                <td>{{phoneNumber}}</td>
+                <td>{{cost}}</td>
+                <!--Location of Sighting-->
+                <td>{{chassisNumber}}</td>
+                <!--Animal's Name-->
+
+                <td>{{date}}</td>
+                <td>{{penaltyAmount}}</td>
+                <!--Location of Sighting-->
+
+                <!--Animal's Name-->
+
+        {{/each}}
+        </tbody>
+    </table>
+{{/partial}}
+{{> layout.hbs}}

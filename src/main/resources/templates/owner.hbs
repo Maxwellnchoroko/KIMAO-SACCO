@@ -1,0 +1,33 @@
+{{#partial "content"}}
+    <h1> View Owner</h1>
+    <br>
+    <br>
+    <table class="table table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Owner Name</th>
+            <th scope="col">Owner NationalID</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Type</th>
+            <th scope="col">Date of Registration </th>
+            <th scope="col">Email Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each driver}}
+            <tr>
+                <td>{{name}}</td>
+                <!--Location of Sighting-->
+                <td>{{nationalId}}</td>
+                <!--Animal's Name-->
+                <td>{{phoneNumber}}</td>
+                <td>{{type}}</td>
+                <!--Location of Sighting-->
+                <td>{{dateOfRegistration}}</td>
+                <!--Animal's Name-->
+                <td>{{emailAdress}}</td>
+        {{/each}}
+        </tbody>
+    </table>
+{{/partial}}
+{{> layout.hbs}}

@@ -1,0 +1,32 @@
+{{#partial "content"}}
+    <h1> Available Sales </h1>
+    <br>
+    <br>
+    <table class="table table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Vehicle Id</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Reg Number</th>
+            <th scope="col">Chassis Number </th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each sales}}
+            <tr>
+                <td>{{date}}</td>
+                <!--Location of Sighting-->
+                <td>{{vehicleId}}</td>
+                <!--Animal's Name-->
+                <td>{{amount}}</td>
+                <td>{{regNumber}}</td>
+                <!--Location of Sighting-->
+                <td>{{chassisNumber}}</td>
+                <!--Animal's Name-->
+                <td>{{pay}}</td>
+        {{/each}}
+        </tbody>
+    </table>
+{{/partial}}
+{{> layout.hbs}}

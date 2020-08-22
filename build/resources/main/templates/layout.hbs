@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Kimao sacco{{/block}}</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/App.css'>
+</head>
+<body>
+<div class="homeland">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="/forms">Home</a></li>
+        <li role="presentation"><a href="/driver">Available Drivers</a></li>
+        <li role="presentation"><a href="/mechanic">Available Mechanics</a></li>
+        <li role="presentation"><a href="/vehicle">Available Vehicles</a></li>
+        <li role="presentation"><a href="/sales">Sales Made</a></li>
+        <li role="presentation"><a href="/owner">View Owners</a></li>
+    </ul>
+    <!--begin main template-->
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+    </footer>
+    </body>
+{{/block}}

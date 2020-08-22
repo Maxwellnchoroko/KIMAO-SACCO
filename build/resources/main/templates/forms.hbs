@@ -1,0 +1,87 @@
+{{#partial "content"}}
+    <h1>Add Driver</h1>
+    <form action="/driver/new" method="post">
+        <label for="name">Enter Driver Name:</label>
+        <input type="text" name="name" id="name" class="form-control" required>
+        <label for="name">Enter Driver NationID:</label>
+        <input type="number" name="nationalId" id="nationalId" class="form-control" required>"
+        <label for="name">Enter Phone Number:</label>
+        <input type="number" name="phoneNumber" id="phoneNumber" class="form-control" required>
+        <label for="name">Enter Date Of Lease:</label>
+        <input type="number" name="dateOfLease" id="dateOfLease" class="form-control" required>"
+        <label for="name">Enter Date Of Return:</label>
+        <input type="number" name="dateOfReturn" id="dateOfReturn" class="form-control" required>
+        <label for="name">Enter Chassis Number:</label>
+        <input type="number" name="chassisNumber" id="chassisNumber" class="form-control" required>"
+        <label for="name">Enter Pay Amount:</label>
+        <input type="number" name="pay" id="pay" class="form-control" required>
+        <button type="submit" btn btn-primary> SUBMIT</button>
+    </form>
+    <h1>Add Mechanic</h1>
+    <form action="/mechanic/new" method="post">
+        <label for="name">Enter Mechanic Name:</label>
+        <input type="text" name="name" id="name" class="form-control" required="required">
+        <label for="name">Enter Mechanic NationID:</label>
+        <input type="number" name="nationalId" id="nationalId" class="form-control" required>"
+        <label for="name">Enter Phone Number:</label>
+        <input type="number" name="phoneNumber" id="phoneNumber" class="form-control" required>
+        <label for="name">Enter Date :</label>
+        <input type="text" name="date" id="date" class="form-control" required>"
+        <label for="name">Enter the Penalty:</label>
+        <input type="text" name="" id="" class="form-control" required>
+        <label for="name">Enter Chassis Number:</label>
+        <input type="text" name="chassisNumber" id="chassisNumber" class="form-control" required>"
+        <label for="name">Enter Cost Amount:</label>
+        <input type="number" name="cost" id="cost" class="form-control" required>
+        <button type="submit" btn btn-primary>SUBMIT</button>
+    </form>
+    <h1>Add Vehicle</h1>
+    <form action="/vehicle/new" method="post">
+        <label for="name">Enter Vehicle ModelName:</label>
+        <input type="text" name="modelName" id="modelName" class="form-control" required="required">
+        <label for="name">Enter Vehicle's Age:</label>
+        <input type="number" name="age" id="age" class="form-control" required>"
+        <label for="name">Enter Vehicle's Color:</label>
+        <input type="text" name="color" id="color" class="form-control" required>
+        <label for="name">Enter Current Price :</label>
+        <input type="text" name="currentPrice" id="currentPrice" class="form-control" required>"
+        <label for="name">Enter Purchase Price:</label>
+        <input type="text" name="purchasePrice" id="purchasePrice" class="form-control" required>
+        <label for="name">Enter Chassis Number:</label>
+        <input type="number" name="chassisNumber" id="chassisNumber" class="form-control" required>"
+        <label for="name">Enter Owner Id:</label>
+        <input type="number" name="ownerId" id="ownerId" class="form-control" required>
+        <label for="name">Enter Mechanic Id:</label>
+        <input type="text" name="mechanicId" id="mechanicId" class="form-control" required="required">
+        <label for="name">Enter Driver Id :</label>
+        <input type="text" name="driverId" id="driverId" class="form-control" required="required">
+        <button type="submit" btn btn-primary> SUBMIT</button>
+    </form>
+    <form action="/owner/new" method="post">
+        <label for="name">Enter Owner Name:</label>
+        <input type="text" name="name" id="name" class="form-control" required>
+        <label for="name">Enter Owner NationID:</label>
+        <input type="number" name="nationalId" id="nationalId" class="form-control" required>"
+        <label for="name">Enter Phone Number:</label>
+        <input type="number" name="phoneNumber" id="phoneNumber" class="form-control" required>
+        <label for="name">Enter Date Of Registration:</label>
+        <input type="number" name="dateOfRegistration" id="dateOfRegistration" class="form-control" required>"
+        <label for="name">Enter Email Address:</label>
+        <input type="text" name="emailAddress" id="emailAddress" class="form-control" required>
+        <label for="name">Enter Type:</label>
+        <input type="text" name="type" id="type" class="form-control" required>"
+        <button type="submit" btn btn-primary> SUBMIT</button>
+    </form>
+    <form action="/sales/new" method="post">
+        <label for="name">Enter Date:</label>
+        <input type="text" name="date" id="date" class="form-control" required>
+        <label for="name">Enter Chassis Number:</label>
+        <input type="text" name="chassisNumber" id="chassisNumber" class="form-control" required>"
+        <label for="name">Enter Amount:</label>
+        <input type="number" name="amount" id="amount" class="form-control" required>
+        <label for="name">Enter Vehicle Id:</label>
+        <input type="number" name="vehicleId" id="vehicleId" class="form-control" required>"
+        <button type="submit" btn btn-primary> SUBMIT</button>
+    </form>
+{{/partial}}
+{{> layout.hbs}}
